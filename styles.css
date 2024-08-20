@@ -1,0 +1,504 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:whitesmoke;
+}
+.main-nav {
+    background-color: #1fcb33;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration:double;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.main-nav ul li a:hover {
+    background-color: #0d0e0d;
+    border-radius: 5px;
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background:linear-gradient(45deg, #d6e1e7, #23773b, #1ac17b, #0bca47, #3e4d71, #0d0c0d);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-content button:hover {
+    background-color: #10c422;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Adding space for fixed navigation bar */
+body {
+    padding-top: 50px; /* Adjust depending on the height of your nav bar */
+}
+/* Header Styles */
+/* Header Styles */
+.book-header {
+    background: #333; /* Darker background for better contrast */
+    color: #fff; /* White text for better readability */
+    padding: 20px 10px; /* Reduced padding to decrease height */
+    text-align: center;
+    position: relative; /* To handle absolute positioning of the cat image */
+    max-width: 2000px; /* Set a max width for the header */
+    margin: 0 auto; /* Center the header horizontally */
+}
+
+.book-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Reduced gap between image and details */
+    flex-wrap: wrap; /* To handle responsiveness */
+}
+
+.book-cover {
+    max-width: 200px; /* Smaller cover image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.book-details {
+    max-width: 500px; /* Slightly narrower details section */
+    text-align: left;
+}
+
+.book-title {
+    font-size: 5em; /* Smaller title for the reduced header */
+    margin: 0 0 10px;
+    color: #ffcc00; /* Highlight color for the title */
+}
+
+.book-author {
+    font-size: 1.2em; /* Adjusted size for author name */
+    margin: 0 0 10px; /* Reduced margin for the author name */
+    color: #aeb3b3; /* Same color as title for consistency */
+}
+
+.book-description {
+    font-size: 2em; /* Adjusted size for description */
+    margin: 0 0 10px; /* Reduced margin for description */
+    color: #ddd; /* Light color for description */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 8px 15px; /* Adjusted padding for the smaller header */
+    font-size: 1em;
+    color: #fff;
+    background-color: #004d99; /* Dark blue color */
+    border-radius: 25px; /* Rounded button */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #004d99; /* Matching border for button */
+    margin-top: 15px; /* Reduced top margin */
+}
+
+.cta-button:hover {
+    background-color: #003366; /* Darker shade on hover */
+    color: #ffcc00; /* Highlight text color on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.cat-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    max-width: 80px; /* Adjust size as needed */
+    height: auto;
+    z-index: 1; /* Ensure the cat image is above other content if needed */
+    opacity: 0.7; /* Slight transparency for the cat image */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-cover {
+        max-width: 70%; /* Make the cover image responsive */
+        margin-bottom: 25px; /* Reduced bottom margin */
+    }
+
+    .cta-button {
+        margin-top: 15px;
+    }
+}
+
+
+
+/* Styling for the About Section */
+/* General Styling for both sections */
+/* General container for image and text */
+.facebook-container {
+    background-color: #f0f4f8; /* خلفية ناعمة */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+.link {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.facebook-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b5998; /* لون خلفية الفيسبوك */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.facebook-button:hover {
+    background-color: #1a3b7a; /* تغيير الخلفية عند التحويم */
+    transform: scale(1.05); /* تكبير بسيط عند التحويم */
+    box-shadow: 0 4px 12px rgba(59, 89, 152, 0.3); /* ظل إضافي عند التحويم */
+}
+.contact-container {
+    background-color: #f0f4f8; /* خلفية ناعمة */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+.link {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b5998; /* لون خلفية الفيسبوك */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button i {
+    margin-right: 8px; /* مسافة بين الأيقونة والنص */
+}
+
+.contact-button:hover {
+    transform: scale(1.05); /* تكبير بسيط عند التحويم */
+    box-shadow: 0 4px 12px rgba(59, 89, 152, 0.3); /* ظل إضافي عند التحويم */
+}
+
+.contact-button:first-of-type {
+    background-color: #3b5998; /* لون خلفية الفيسبوك */
+}
+
+.contact-button:first-of-type:hover {
+    background-color: #1a3b7a; /* تغيير الخلفية عند التحويم على فيسبوك */
+}
+
+.contact-button:nth-of-type(2) {
+    background-color: #25D366; /* لون خلفية الواتساب */
+}
+
+.contact-button:nth-of-type(2):hover {
+    background-color: #1ebe5b; /* تغيير الخلفية عند التحويم على واتساب */
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    max-width: 2000px;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the image */
+.img1 {
+    max-width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Hover effect for the image */
+.img1:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for the text */
+.about2, .about {
+    padding: 10px;
+    border-radius: 10px;
+    font-family: serif;
+    line-height: 3;
+    text-align: justify;
+    color: #ffffff;
+    background:linear-gradient(45deg, #6a6d6f, #2d2d32, #494a4a, #3a3a3e, #3e4d71, #716f71);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    font-size: larger;
+}
+
+/* Hover effect for text */
+.about2:hover, .about:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+}
+
+/* Scroll-in animation */
+.about2, .about {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e3e6f0;
+}
+
+h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #3b5998;
+}
+
+.quiz-question {
+    margin: 25px 0;
+    text-align: left;
+}
+
+.quiz-question p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.quiz-question label {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #f7f9fc;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.quiz-question label:hover {
+    background-color: #eaf1ff;
+    border-color: #3b5998;
+}
+.quiz-question img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+button {
+    padding: 15px 30px;
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #10b916;
+    transform: scale(1.05);
+}
+
+#quiz-result {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #3b5998;
+}
+
+
+
+
+
+/* تنسيق المحتوى الرئيسي */
+.main-content {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #a3ced3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.pdf-download {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+hr{
+    color: black;
+    width: auto;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+html {
+    scroll-behavior: smooth;
+}
+.video-container {
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#myVideo {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.video-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-btn:hover {
+    background-color: #218838;
+}
+.video-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
