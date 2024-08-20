@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النخبة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#header-section">الرئيسية</a></li>
+            <li><a href="#" onclick="showModal()">تسجيل الدخول</a></li>
+            <li><a href="#main-content">المحتوى الرئيسي</a></li>
+            <li><a href="#pdf-download">تحميل الكتاب</a></li>
+        </ul>
+    </nav>
+
+    <div id="code-modal" class="modal">
+        <div class="modal-content" id="check">
+            <h2>تحقق من الكود</h2>
+            <input type="text" id="code-input" placeholder="Enter Your Code">
+            <input type="text" id="username-input" placeholder="Enter Your Name">
+            <button onclick="verifyCode()">Enter</button>
+        </div>
+    </div>
+    <header class="book-header">
+    <div class="book-info">
+        <img src="F:\summer\9875ce24-0ac8-48d6-b73b-ee48a1f9eb17.jpg" class="book-cover" alt="Cover Image">
+        <div class="book-details">
+            <h1 class="book-title">النٌخبة</h1>
+            <p class="book-author">إعداد : شعبان محمود</p> <!-- اسم الكاتب -->
+            <p class="book-description">كتاب "النخبة" هو دليل شامل للتميز والابتكار. استكشف أسرار النجاح والتفوق.</p>
+            <a href="#" class="cta-button">تعلم المزيد</a>
+        </div>
+    </div>
+</header>
+
+
+    
+    
+    <div id="main-content" class="main-content">
+        <h1 class="welcome">""مرحبا بكم في موقع النخبة""</h1>
+    </div>
+    <div class="contact-container">
+        <p class="link">يمكنك متابعة موقعنا على الفيسبوك من خلال:</p>
+        <a href="#" id="facebook-link" class="contact-button">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+    
+        <p class="link">أو التواصل معنا عبر الواتساب:</p>
+        <a href="https://wa.me/1234567890" target="_blank" class="contact-button">
+            <i class="fab fa-whatsapp"></i> Whatsapp
+        </a>
+    </div>
+    <div class="container">
+        <img src="F:\summer\النخبة3.jpg" class="img1" alt="">
+    <div class="about2"><p>سلسلة كتب "النخبة" في الرياضيات تعد واحدة<br> 
+        من أبرز المراجع التعليمية التي تم تصميمها خصيصًا <br>لتلبية احتياجات الطلاب في مختلف المراحل الدراسية.<br> 
+        تهدف هذه السلسلة إلى تعزيز مهارات الطلاب في الرياضيات<br> 
+        وتطوير فهمهم للمفاهيم الأساسية والمتقدمة في هذا المجال.</p></div>
+        <div class="about"><p>سلسلة كتب "النخبة" في الرياضيات<br>
+             هي استثمار قيم لكل طالب يسعى إلى تحسين مهاراته في هذا العلم الأساسي.<br>
+             بفضل منهجها المتسلسل وشموليتها، توفر السلسلة الأسس <br>
+             المتينة التي يحتاجها الطلاب للنجاح في <br>
+             مختلف مراحلهم الدراسية. إنها ليست مجرد مجموعة كتب،<br>
+              بل هي مرجع تعليمي متكامل يرافق الطلاب خطوة بخطوة نحو التفوق في الرياضيات.</p></div>
+
+
+    </div>
+    <div class="quiz-container">
+        <h2>اختبار رياضيات - اختيار من متعدد</h2>
+    
+        <!-- السؤال الأول كصورة -->
+        <div class="quiz-question">
+            <img src="F:\summer\953e5192-60f4-4707-a348-3f90826667ba.jpeg" alt="السؤال الأول">
+            <label><input type="radio" name="q1" value="5"> 5</label><br>
+            <label><input type="radio" name="q1" value="-1"> -1</label><br>
+            <label><input type="radio" name="q1" value="6">6</label><br>
+            <label><input type="radio" name="q1" value=""> صفر</label><br>
+        </div>
+    
+        <!-- السؤال الثاني كصورة -->
+        <div class="quiz-question">
+            <img src="F:\summer\f434bd99-63e9-4e8d-b919-429bd139b2a9.jpeg" alt="السؤال الثاني">
+            <label><input type="radio" name="q2" value="0"> صفر</label><br>
+            <label><input type="radio" name="q2" value="2"> 2</label><br>
+            <label><input type="radio" name="q2" value="4"> 4</label><br>
+        </div>
+    
+        <!-- السؤال الثالث كصورة -->
+        <div class="quiz-question">
+            <img src="F:\summer\34ee95fe-cce1-4ea4-9418-bce96c54abdc.jpeg" alt="السؤال الثالث">
+            <label><input type="radio" name="q3" value="2"> 2</label><br>
+            <label><input type="radio" name="q3" value="3"> 3</label><br>
+            <label><input type="radio" name="q3" value="4"> 4</label><br>
+        </div>
+        <div class="quiz-question">
+            <img src="F:\summer\59c2f18e-d097-4b15-8fcf-27e502b031eb.jpeg" alt="السؤال الرابع">
+            <label><input type="radio" name="q4" value="4"> 4</label><br>
+            <label><input type="radio" name="q4" value="3"> 3</label><br>
+            <label><input type="radio" name="q4" value="2"> 2</label><br>
+            <label><input type="radio" name="q4" value="1"> 1</label><br>
+        </div>
+    
+        <!-- السؤال الخامس كصورة -->
+        <div class="quiz-question">
+            <img src="F:\summer\e9cbf7bd-43a8-437f-8706-d08b8fd45681.jpeg" alt="السؤال الخامس">
+            <label><input type="radio" name="q5" value="1"> سXص</label><br>
+            <label><input type="radio" name="q5" value="2"> صXس</label><br>
+            <label><input type="radio" name="q5" value="3"> س<sup>2</sup>
+            </label><br>
+            <label><input type="radio" name="q5" value="4"> ص<sup>2</sup>
+            </label><br>
+        </div>
+    
+        <button onclick="checkAnswers()">تحقق من الإجابات</button>
+        <p id="quiz-result"></p>
+    </div>
+    
+    
+    
+   
+    
+
+    <div id="pdf-download" class="pdf-download">
+        <h2> تحميل كتاب النخبة تانية ترم اول PDF</h2>
+        <a href="تانية ترم اول.pdf" class="download-button" id="download-button" download>Download</a>
+        <hr>
+        <h2>تحميل كتاب النخبة الصف الثالث الاعداديPDF</h2>
+        <a href="ترم اول الثالث كامل.pdf" class="download-button" id="download-button" download>Download</a>
+    </div>
+    <div class="video-container">
+        <h2 class="video-title">فيديو تعليمي حول كتاب النخبة</h2>
+        <video id="myVideo" controls>
+            <source src="F:\summer\IMG_0504.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="playPauseBtn" class="video-btn">Play/Pause</button>
+    </div>
+    
+    
+    <script src="scripts.js"></script>
+
+
+</body>
+</html>
+
